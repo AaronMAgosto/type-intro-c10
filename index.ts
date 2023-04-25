@@ -1,18 +1,18 @@
-let age : number = 21;
-let firstName: string ='Aaron'
-let isTall: boolean = true;
-let childrenNames: string[] = ['ilan', 'brian']
+// let age : number = 21;
+// let firstName: string ='Aaron'
+// let isTall: boolean = true;
+// let childrenNames: string[] = ['ilan', 'brian']
 
-//console.log(`${firstName} is ${age} years old `)
-if(isTall) {
- // console.log("and so tall")
-} else{
-  //console.log('and so pretty')
-}
+// //console.log(`${firstName} is ${age} years old `)
+// if(isTall) {
+//  // console.log("and so tall")
+// } else{
+//   //console.log('and so pretty')
+// }
 
-for(let i: number = 0; i < childrenNames.length; i++) {
-  // console.log(childrenNames[i])
-}
+// for(let i: number = 0; i < childrenNames.length; i++) {
+//   // console.log(childrenNames[i])
+// }
 
 
 
@@ -38,4 +38,25 @@ function sum (x: number ,y: number) : number {
 }
 
 let total: number = sum(5,6)
-console.log(total)
+// console.log(total)
+
+function debug(message: string) : void {
+  console.log(message)
+}
+//  debug(" hello world")
+
+interface person {
+  firstName: string,
+  age: number,
+  children: string[],
+  hasCertificate?: boolean,
+}
+
+ let Aaron: person= {
+  firstName: 'me',
+  age: 23,
+  children:['ilan, brian'],
+  hasCertificate: true 
+ }
+
+ console.log(Aaron)
